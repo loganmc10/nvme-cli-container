@@ -6,6 +6,7 @@ RUN git clone https://github.com/linux-nvme/nvme-cli.git &&
 
 WORKDIR nvme-cli
 
+# Based on instructions from https://github.com/linux-nvme/nvme-cli
 RUN meson setup --force-fallback-for=libnvme .build && \
     meson compile -C .build && \
     meson install -C .build
