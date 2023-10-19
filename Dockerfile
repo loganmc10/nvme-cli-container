@@ -1,7 +1,8 @@
 FROM registry.access.redhat.com/ubi9/ubi:latest
 
 RUN yum install -y git meson gcc
-RUN git clone https://github.com/linux-nvme/nvme-cli.git
+RUN git clone https://github.com/linux-nvme/nvme-cli.git &&
+    git checkout v2.6
 
 WORKDIR nvme-cli
 
