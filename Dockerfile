@@ -9,7 +9,7 @@ RUN git clone https://github.com/linux-nvme/nvme-cli.git && \
     meson setup --force-fallback-for=libnvme .build && \
     meson compile -C .build && \
     meson install -C .build && 
-    cd / && rm /nvme-cli
+    cd / && rm -rf /nvme-cli
 
 ENV LD_LIBRARY_PATH /usr/local/lib64
 
