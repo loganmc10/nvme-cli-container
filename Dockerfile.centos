@@ -2,4 +2,4 @@ FROM quay.io/centos/centos:stream9-minimal
 
 RUN microdnf install -y nvme-cli
 
-ENTRYPOINT /usr/sbin/nvme
+ENTRYPOINT /usr/bin/bash

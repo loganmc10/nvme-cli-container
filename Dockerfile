@@ -13,4 +13,4 @@ RUN git checkout v2.6 && \
 
 ENV LD_LIBRARY_PATH /usr/local/lib64
 
-ENTRYPOINT /usr/local/sbin/nvme
+ENTRYPOINT /usr/bin/bash
